@@ -1,12 +1,14 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { PlacementComponent } from './placement/placement.component';
-import { ProductsComponent } from './products/products.component';
-import { PricelistComponent } from './pricelist/pricelist.component';
-import { ImpressumComponent } from './impressum/impressum.component';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './header/header.component';
+import {PlacementComponent} from './components/placement/placement.component';
+import {ProductsComponent} from './components/products/products.component';
+import {PricelistComponent} from './components/pricelist/pricelist.component';
+import {ImpressumComponent} from './impressum/impressum.component';
+import {ContactComponent} from "./contact/contact.component";
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { ImpressumComponent } from './impressum/impressum.component';
     PlacementComponent,
     ProductsComponent,
     PricelistComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -21,16 +21,43 @@
   display: block;
 }
 
-#menu a:hover {
-  /*background-color: #333;*/
+#footer {
+  background-color: darkred;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
-.companyname{
+#footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer li {
+  display: inline-block;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.companyname {
   text-align: left;
   padding-right: 30%;
   padding-left: 5%;
 }
 
-.form{
-  background-color: lightgray;
+.form {
+  justify-content:left ;
+  background-color: whitesmoke;
+  font-family: Arial;
+  font-size: 16px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  padding-left: 0;
+  padding-right: 0;
 }
