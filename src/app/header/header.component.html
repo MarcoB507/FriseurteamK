@@ -1,78 +1,28 @@
-
 <nav id="menu">
   <ul>
     <li><a routerLink="/">Friseurteam K</a></li>
-    <li><a routerLink="/placement">Standorte</a></li>
-    <li><a routerLink="/products">Produkte</a></li>
+    <li>
+      <div class="dropdown">
+        <button class="dropbtn" (click)="toggleDropdown()">Standorte</button>
+        <div class="dropdown-content" id="mydropdown" [ngStyle]="{'display': dropdownVisible ? 'block' : 'none'}">
+          <a routerLink="/placement/p1">Standort 1</a>
+          <a routerLink="/placement/p2">Standort 2</a>
+          <a routerLink="/placement/p3">Standort 3</a>
+        </div>
+      </div>
+    </li>
     <li><a routerLink="/pricelist">Preisliste</a></li>
+    <li><a routerLink="/products">Produkte</a></li>
+    <!--    <li>-->
+<!--      <div class="dropdown">-->
+<!--        <button class="dropbtn" (click)="toggleDropdownproducts()">Produkte</button>-->
+<!--        <div class="dropdown-content" id="mysnddropdown" [ngStyle]="{'display': dropdownVisible ? 'block' : 'none'}">-->
+<!--          <a routerLink="/placement/hair">Für Ihre Haarpflege</a>-->
+<!--          <a routerLink="/placement/feet">Für Ihre Fußpflege</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </li>-->
+    <li><a routerLink="/appointment">Termin</a></li>
+    <li><a routerLink="/career">Karriere</a></li>
   </ul>
 </nav>
-<form class="form">
-  <h1>Herzlich Willkommen auf unserer Website.</h1>
-  <p>Wir unterstützen und begleiten Unternehmen dabei, die eigene Belegschaft (Workforce) aufzubauen, neu auszurichten
-    und weiterzuentwickeln, um die Chancen der digitalen Transformation gewinnbringend zu nutzen und Wettbewerbsvorteile
-    zu erlangen. Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.Dies gelingt uns dank des tiefen Verständnisses der Herausforderungen unserer Kunden, eigens dafür
-    entwickelter Werkzeuge und Methoden sowie eines großen Teams erfahrener Spezialisten. Mit unserem
-    lösungsorientierten und ganzheitlichen Ansatz qualifizieren wir Mitarbeiter:innen für künftige Aufgaben und
-    Rollen.</p>
-</form>

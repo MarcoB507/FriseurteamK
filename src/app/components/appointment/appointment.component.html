@@ -1,0 +1,56 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+  <div class="container">
+    <h1>Senden Sie uns Ihren Wunschtermin zu:</h1>
+
+    <form class="form" (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="vorname">Vorname:</label>
+        <input type="text" id="vorname" name="vorname" [(ngModel)]="vorname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="leistung">Leistung:</label>
+        <select id="leistung" name="leistung" [(ngModel)]="leistung" required>
+          <option value="option1"></option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Ihre Nachricht:</label>
+        <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="datetime">Termin:</label>
+        <input type="datetime-local" id="datetime" name="datetime" [(ngModel)]="datetime" (change)="checkInvalidDateTime()" [min]="minDateTime" required>
+      </div>
+
+      <button type="submit">Termin vereinbaren</button>
+    </form>
+    <h1>Bitte beachten Sie folgendes</h1>
+    <ul class="appointment_list">
+      <li>Termine sind ausschlielich in unseren Regulären Öffnungszeiten möglich, diese finden sie
+        <a routerLink="/"><b>hier</b></a> </li>
+      <li>Sie können Ihren Terminvorschlag nicht in der Vergangenheit oder den kommenden 2 Tagen buchen
+    </ul>
+  </div>
+
+
+  </body>
+</html>

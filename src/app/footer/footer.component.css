@@ -1,0 +1,26 @@
+#footer {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+#footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer li {
+  display: inline-block;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}

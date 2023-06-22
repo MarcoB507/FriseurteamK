@@ -6,9 +6,22 @@ import {HeaderComponent} from './header/header.component';
 import {PlacementComponent} from './components/placement/placement.component';
 import {ProductsComponent} from './components/products/products.component';
 import {PricelistComponent} from './components/pricelist/pricelist.component';
-import {ImpressumComponent} from './impressum/impressum.component';
-import {ContactComponent} from "./contact/contact.component";
+import {ImpressumComponent} from './footer/impressum/impressum.component';
+import {ContactComponent} from "./footer/contact/contact.component";
 import {AppRoutingModule} from "./app-routing.module";
+import {FooterComponent} from './footer/footer.component';
+import {MainpageComponent} from './components/mainpage/mainpage.component';
+import {PlacementOneComponent} from './components/placement/placement-one/placement-one.component';
+import {PlacementTwoComponent} from './components/placement/placement-two/placement-two.component';
+import {PlacementThreeComponent} from './components/placement/placement-three/placement-three.component';
+import {ProductOneComponent} from './components/products/product-one/product-one.component';
+import {ProductTwoComponent} from './components/products/product-two/product-two.component';
+import {CareerComponent} from './components/career/career.component';
+import {AppointmentComponent} from './components/appointment/appointment.component';
+import {FormsModule} from "@angular/forms";
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatInputModule} from '@angular/material/input';
+import {MatNativeDateModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -18,13 +31,27 @@ import {AppRoutingModule} from "./app-routing.module";
     ProductsComponent,
     PricelistComponent,
     ImpressumComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    MainpageComponent,
+    PlacementOneComponent,
+    PlacementTwoComponent,
+    PlacementThreeComponent,
+    ProductOneComponent,
+    ProductTwoComponent,
+    CareerComponent,
+    AppointmentComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -5px;
+}
+
+.column {
+  flex: 0 0 30%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.column img {
+  display: block;
+  width: 100%;
+  /*height: auto;*/
+}
+
+.column p {
+  margin-top: 10px;
+}
