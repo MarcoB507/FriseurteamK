@@ -31,3 +31,11 @@ h1 {
 .column p {
   margin-top: 10px;
 }
+
+.products_text {
+  margin-top: -4%;
+  height: 10%;
+  background-color: #dddddd;
+  color: black;
+  text-align: center;
+}

@@ -1,5 +1,6 @@
 <html>
   <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
 
@@ -40,8 +41,11 @@
         <label for="datetime">Termin:</label>
         <input type="datetime-local" id="datetime" name="datetime" [(ngModel)]="datetime" (change)="checkInvalidDateTime()" [min]="minDateTime" required>
       </div>
+      <div class="form-group">
+      <button id="submit" type="submit">Termin vereinbaren</button>
+      <button id="delete" (click)="delete()" >zurücksetzen</button>
+      </div>
 
-      <button type="submit">Termin vereinbaren</button>
     </form>
     <h1>Bitte beachten Sie folgendes</h1>
     <ul class="appointment_list">
@@ -50,7 +54,5 @@
       <li>Sie können Ihren Terminvorschlag nicht in der Vergangenheit oder den kommenden 2 Tagen buchen
     </ul>
   </div>
-
-
   </body>
 </html>

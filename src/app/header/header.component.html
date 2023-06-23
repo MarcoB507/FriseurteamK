@@ -1,5 +1,17 @@
-<nav id="menu">
-  <ul>
+<html>
+<head>
+</head>
+
+<div class="topnav" id="myTopnav" (click)="toggleSidebar()">
+  <input type="checkbox"  class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <nav id="menu">
+    <div class="main-content-wrapper">
+    <ul>
     <li><a routerLink="/">Friseurteam K</a></li>
     <li>
       <div class="dropdown">
@@ -25,4 +37,7 @@
     <li><a routerLink="/appointment">Termin</a></li>
     <li><a routerLink="/career">Karriere</a></li>
   </ul>
+    </div>
 </nav>
+</div>
+</html>

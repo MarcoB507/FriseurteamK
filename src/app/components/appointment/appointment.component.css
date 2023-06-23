@@ -46,6 +46,15 @@ input[type="datetime-local"] {
   height: 100px;
 }
 
+#delete, #submit {
+  margin-top: 5%;
+}
+
+#delete{
+  width: 40%;
+  margin-left: 20%;
+}
+
 .appointment_list {
   color: white;
 }

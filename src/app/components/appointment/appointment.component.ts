@@ -43,4 +43,20 @@ export class AppointmentComponent {
     // Hier können Sie den Code zum Absenden des Formulars implementieren
     console.log("Formular abgesendet!");
   }
+
+  delete(){
+    var confirmDelete = window.confirm("Möchten Sie Ihre Daten wirklich löschen?");
+
+    if (confirmDelete) {
+      alert("Ihre Daten wurden gelöscht.");
+      this.vorname = '';
+      this.name = '';
+      this.leistung = '';
+      this.email = '';
+      this.message = '';
+      this.datetime = '';
+    } else {
+      alert("Der Löschvorgang wurde abgebrochen.");
+    }
+  }
 }

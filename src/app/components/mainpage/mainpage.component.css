@@ -1,57 +1,137 @@
 /* develop first container */
 
 
-#mainpage_introduce {
-  margin-top: 2%;
-  /*display: flex;*/
-  align-items: center;
-  /*margin-bottom: 10%;*/
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 363px;
-  background-image: url(src/pictures/Confluence.PNG);
-  z-index: 2;
+/*#mainpage_introduce {*/
+/*  margin-top: 2%;*/
+/*  !*display: flex;*!*/
+/*  align-items: center;*/
+/*  !*margin-bottom: 10%;*!*/
+/*  margin-left: 5%;*/
+/*  margin-right: 5%;*/
+/*  height: 363px;*/
+/*  background-image: url(src/pictures/Confluence.PNG);*/
+/*  z-index: 2;*/
+/*}*/
+
+/*!* develop second Container *!*/
+
+/*#mainpage_certificate {*/
+/*  !*margin-top: 10%;*!*/
+/*  !*display: flex;*!*/
+/*  align-items: center;*/
+/*  margin-top: 2%;*/
+/*  margin-left: 5%;*/
+/*  margin-right: 5%;*/
+/*  height: 363px;*/
+/*  background-image: url(src/pictures/20170726-123435.JPG);*/
+/*  z-index: 2;*/
+/*}*/
+
+.w3-center {
+  text-align: center;
 }
 
-/* develop second Container */
-
-#mainpage_certificate {
-  /*margin-top: 10%;*/
-  /*display: flex;*/
-  align-items: center;
-  margin-top: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 363px;
-  background-image: url(src/pictures/20170726-123435.JPG);
-  z-index: 2;
+.w3-content {
+  position: relative;
 }
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.w3-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  padding: 8px 16px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.w3-display-left {
+  left: 0;
+}
+
+.w3-display-right {
+  right: 0;
+}
+
 
 /* develop third Container */
 
 .mainpage_h1 {
-  margin-top: 10%;
+  /*margin-top: 10%;*/
   text-align: center;
 }
 
 .mainpage_p {
-  margin-top: 5%;
+  /*margin-top: 5%;*/
   font-family: "Courier New";
   text-align: left;
   font-size: 32px;
 }
 
+/* Card Design */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /*max-width: 300px;*/
+  margin: auto;
+  text-align: center;
+}
+
+.secondCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
 /*table-design*/
 
 .price-table{
   border-collapse: collapse;
-  margin: 5% auto;
+  margin: auto;
   background-color: #1b1c1b;
 }
 
 .price-table th, .price-table td {
   text-align: left;
-  padding: 10px;
+  /*padding: 10px;*/
   border-bottom: 1px solid #ddd;
 }
 

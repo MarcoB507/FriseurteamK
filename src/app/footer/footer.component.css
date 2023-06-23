@@ -6,6 +6,10 @@
   bottom: 0;
   font-weight: bold;
   font-family: Arial;
+  width: 98%;
+  /*position: fixed;*/
+  margin-bottom: 0.5%;
+  margin-right: 0.5%;
 }
 
 #footer ul {

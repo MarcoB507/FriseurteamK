@@ -7,29 +7,32 @@ import {Component, HostListener} from '@angular/core';
 })
 export class HeaderComponent {
 
-  dropdownVisible = false;
-  dropdownproductsVisible = false;
+   dropdownVisible = false;
+   dropdownproductsVisible = false;
 
-  ngOnInit() {
+  toggleSidebar(){
+
   }
 
-  toggleDropdown() {
-    this.dropdownVisible = !this.dropdownVisible;
-  }
+   ngOnInit() {
+   }
 
-  toggleDropdownproducts() {
-    this.dropdownproductsVisible = !this.dropdownproductsVisible;
-  }
+   toggleDropdown() {
+     this.dropdownVisible = !this.dropdownVisible;
+   }
+     toggleDropdownproducts() {
+     this.dropdownproductsVisible = !this.dropdownproductsVisible;
+   }
 
-  @HostListener('document:click', ['$event'])
-  onDocumentClick(event: MouseEvent) {
-    const target = event.target as HTMLElement;
-    const dropdown = document.getElementById('mydropdown');
+   @HostListener('document:click', ['$event'])
+   onDocumentClick(event: MouseEvent) {
+     const target = event.target as HTMLElement;
+     const dropdown = document.getElementById('mydropdown');
     const dropdownButton = document.querySelector('.dropdown .dropbtn');
 
-    // @ts-ignore
-    if (dropdown && !dropdown.contains(target) && !dropdownButton.contains(target)) {
-      this.dropdownVisible = false;
-    }
+     // @ts-ignore
+     if (dropdown && !dropdown.contains(target) && !dropdownButton.contains(target)) {
+       this.dropdownVisible = false;
+     }
   }
 }
