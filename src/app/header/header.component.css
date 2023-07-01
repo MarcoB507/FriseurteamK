@@ -190,12 +190,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
 }
+
 @media screen and (max-width: 710px) {
   .topnav:not(.responsive) ul {
     display: none;
