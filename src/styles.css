@@ -16,7 +16,7 @@ html {
   font-family: Arial;
   background-image: url(pictures/background_pro2.jpg);
   background-size: 100%;
-  background-position: center;
+  /*background-position: center;*/
   background-repeat: no-repeat;
 }
 

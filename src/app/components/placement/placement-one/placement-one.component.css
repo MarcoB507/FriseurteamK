@@ -6,22 +6,6 @@ h1 {
   text-shadow: 20px 4px 4px 4px #ffffff;
 }
 
-/*.placement-one-maps {*/
-/*  min-height: 800px;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  !*gap: 5%;*!*/
-/*}*/
-
-/*.placement_one_description {*/
-/*  width: 30%;*/
-/*  font-size: 24px;*/
-/*}*/
-
-/*.placement_one_card {*/
-/*  width: 100%;*/
-/*}*/
-
 .one_maps {
 
 }
@@ -33,5 +17,8 @@ h1 {
 }
 
 .one_description {
-
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: groove;
 }
