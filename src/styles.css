@@ -33,14 +33,8 @@ table, tr, td, h, a {
   height: 363px;
 }
 
-.firstImage {
-  background-image: url(pictures/practitioner.jpg);
-  height: 904px;
-  justify-content: center;
-  background-color: black;
-}
-
 .secondImage {
   background-image: url(pictures/jubilee-ace.jpg);
   height: 293px;
 }
+

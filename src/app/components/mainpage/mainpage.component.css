@@ -1,68 +1,7 @@
-/* develop first container */
-
-
-/*#mainpage_introduce {*/
-/*  margin-top: 2%;*/
-/*  !*display: flex;*!*/
-/*  align-items: center;*/
-/*  !*margin-bottom: 10%;*!*/
-/*  margin-left: 5%;*/
-/*  margin-right: 5%;*/
-/*  height: 363px;*/
-/*  background-image: url(src/pictures/Confluence.PNG);*/
-/*  z-index: 2;*/
-/*}*/
-
-/*!* develop second Container *!*/
-
-/*#mainpage_certificate {*/
-/*  !*margin-top: 10%;*!*/
-/*  !*display: flex;*!*/
-/*  align-items: center;*/
-/*  margin-top: 2%;*/
-/*  margin-left: 5%;*/
-/*  margin-right: 5%;*/
-/*  height: 363px;*/
-/*  background-image: url(src/pictures/20170726-123435.JPG);*/
-/*  z-index: 2;*/
-/*}*/
-
-.w3-center {
-  text-align: center;
-}
-
-.w3-content {
-  position: relative;
-  border: groove;
-}
-
 .mySlides {
   display: none;
   width: 100%;
 }
-
-.w3-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  padding: 8px 16px;
-  color: white;
-  background-color: black;
-  border: none;
-  cursor: pointer;
-}
-
-.w3-display-left {
-  left: 0;
-}
-
-.w3-display-right {
-  right: 0;
-}
-
-
-/* develop third Container */
 
 .mainpage_h1 {
   /*margin-top: 10%;*/
@@ -75,25 +14,6 @@
   text-align: left;
   font-size: 32px;
 }
-
-/* Card Design */
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /*max-width: 300px;*/
-  margin: auto;
-  border: groove;
-  text-align: center;
-}
-
-.secondCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  border: groove;
-}
-
 
 .title {
   color: grey;
@@ -122,7 +42,6 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
-
 
 /*table-design*/
 
@@ -161,4 +80,104 @@ button:hover, a:hover {
 
 .price-table, .price-table th, .price-table td{
   width: 80%;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  height: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0; /* Die "prev" Pfeil wird ganz links ausgerichtet */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0; /* Die "next" Pfeil wird ganz rechts ausgerichtet */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
