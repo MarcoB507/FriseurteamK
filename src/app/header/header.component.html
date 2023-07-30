@@ -2,43 +2,18 @@
 <head>
 </head>
 
-<div class="topnav" id="myTopnav" (click)="toggleSidebar()">
-  <input type="checkbox"  class="openSidebarMenu" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <div class="spinner diagonal part-1"></div>
-    <div class="spinner horizontal"></div>
-    <div class="spinner diagonal part-2"></div>
-  </label>
-  <nav id="menu">
-    <div class="main-content-wrapper">
-    <ul>
-    <li><a routerLink="/">Friseurteam K</a></li>
-    <li>
-        <a routerLink="/placement">Standorte</a>
-<!--      </div>div class="dropdown">-->
-<!--        <button routerLink="/placement" class="dropbtn" (click)="toggleDropdown()">Standorte</button>-->
-<!--        <div class="dropdown-content" id="mydropdown" [ngStyle]="{'display': dropdownVisible ? 'block' : 'none'}">-->
-<!--          <a routerLink="/placement/p1">Standort 1</a>-->
-<!--          <a routerLink="/placement/p2">Standort 2</a>-->
-<!--          <a routerLink="/placement/p3">Standort 3</a>-->
-<!--        </div>-->
-<!--      </div>-->
-    </li>
-    <li><a routerLink="/pricelist">Preisliste</a></li>
-    <li><a routerLink="/products">Produkte</a></li>
-    <!--    <li>-->
-<!--      <div class="dropdown">-->
-<!--        <button class="dropbtn" (click)="toggleDropdownproducts()">Produkte</button>-->
-<!--        <div class="dropdown-content" id="mysnddropdown" [ngStyle]="{'display': dropdownVisible ? 'block' : 'none'}">-->
-<!--          <a routerLink="/placement/hair">Für Ihre Haarpflege</a>-->
-<!--          <a routerLink="/placement/feet">Für Ihre Fußpflege</a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </li>-->
-<!--    <li><a routerLink="/appointment">Termin</a></li>-->
-<!--    <li><a routerLink="/career">Karriere</a></li>-->
-  </ul>
-    </div>
-</nav>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="topnav" [ngClass]="{ 'responsive': isResponsive }">
+  <a routerLink="/" class="active">
+    Friseurteam <span class="red-letter">K</span>
+  </a>
+
+  <a routerLink="/placement">Standorte</a>
+  <a routerLink="/pricelist">Preisliste</a>
+  <a routerLink="/products">Produkte</a>
+  <a href="javascript:void(0);" class="icon" (click)="toggleResponsive()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 </html>

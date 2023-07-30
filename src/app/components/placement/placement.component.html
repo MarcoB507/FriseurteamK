@@ -3,11 +3,38 @@
   </head>
   <body class="placement">
   <h1>Alle Standorte im Überblick</h1>
+
   <div class="placement_main">
     <button routerLink="/placement/p1">Pflegeheim Gegenüber vom Herzzentrum Dresden</button><br>
     <button routerLink="/placement/p2">Pflegeheim am blauen Wunder</button><br>
     <button routerLink="/placement/p3">Pflegeheim am Elbufer</button><br>
   </div>
+
+  <!-- placement.component.html -->
+  <div class="tab">
+    <button class="tablinks, active" routerLink="/placement/p1" (mouseover)="openCity('Herzzentrum')">Pflegeheim Gegenüber vom Herzzentrum Dresden</button>
+    <button class="tablinks" (mouseover)="openCity('blauen Wunder')">Pflegeheim am blauen Wunder</button>
+    <button class="tablinks" (mouseover)="openCity('Elbufer')">Pflegeheim am Elbufer</button>
+  </div>
+
+  <div id="Herzzentrum" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="blauen Wunder" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Elbufer" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div class="clearfix"></div>
+
+
   </body>
 </html>
 

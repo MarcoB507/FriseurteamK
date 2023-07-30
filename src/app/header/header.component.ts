@@ -9,19 +9,18 @@ export class HeaderComponent {
 
    dropdownVisible = false;
    dropdownproductsVisible = false;
+  isResponsive: boolean = false;
+
+  toggleResponsive() {
+    this.isResponsive = !this.isResponsive;
+  }
+
 
   toggleSidebar(){
 
   }
 
    ngOnInit() {
-   }
-
-   toggleDropdown() {
-     this.dropdownVisible = !this.dropdownVisible;
-   }
-     toggleDropdownproducts() {
-     this.dropdownproductsVisible = !this.dropdownproductsVisible;
    }
 
    @HostListener('document:click', ['$event'])
@@ -35,4 +34,5 @@ export class HeaderComponent {
        this.dropdownVisible = false;
      }
   }
+
 }

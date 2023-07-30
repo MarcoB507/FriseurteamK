@@ -6,6 +6,7 @@
 .mainpage_h1 {
   /*margin-top: 10%;*/
   text-align: center;
+  font-weight: bold;
 }
 
 .mainpage_p {
@@ -45,7 +46,7 @@ button:hover, a:hover {
 
 /*table-design*/
 
-.price-table{
+.price-table {
   border-collapse: collapse;
   margin: auto;
   background-color: #1b1c1b;
@@ -53,7 +54,7 @@ button:hover, a:hover {
 
 .price-table th, .price-table td {
   text-align: left;
-  /*padding: 10px;*/
+  padding: 10px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -75,14 +76,16 @@ button:hover, a:hover {
 
 .price-table tbody td:last-child {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.price-table, .price-table th, .price-table td{
-  width: 80%;
+.price-table, .price-table th, .price-table td {
+  width: 50%;
 }
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -132,7 +135,7 @@ button:hover, a:hover {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -178,6 +181,18 @@ button:hover, a:hover {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .price-table tbody td:first-child, .price-table tbody td:last-child {
+    font-weight: bold;
+    font-size: 8px;
+  }
 }

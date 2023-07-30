@@ -38,3 +38,7 @@ table, tr, td, h, a {
   height: 293px;
 }
 
+.topnav {
+  background-image: url(pictures/menu_footer_bg.jpg);
+  vertical-align: sub;
+}
