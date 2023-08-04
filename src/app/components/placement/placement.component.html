@@ -13,12 +13,12 @@
   <!-- placement.component.html -->
   <div class="tab">
     <button class="tablinks, active" routerLink="/placement/p1" (mouseover)="openCity('Herzzentrum')">Pflegeheim Gegenüber vom Herzzentrum Dresden</button>
-    <button class="tablinks" (mouseover)="openCity('blauen Wunder')">Pflegeheim am blauen Wunder</button>
-    <button class="tablinks" (mouseover)="openCity('Elbufer')">Pflegeheim am Elbufer</button>
+    <button class="tablinks" routerLink="/placement/p2" (mouseover)="openCity('blauen Wunder')">Pflegeheim am blauen Wunder</button>
+    <button class="tablinks" routerLink="/placement/p3" (mouseover)="openCity('Elbufer')">Pflegeheim am Elbufer</button>
   </div>
 
   <div id="Herzzentrum" class="tabcontent">
-    <h3>London</h3>
+    <h3>Herzzentrum</h3>
     <p>London is the capital city of England.</p>
   </div>
 
