@@ -4,12 +4,6 @@
   <body class="placement">
   <h1>Alle Standorte im Überblick</h1>
 
-  <div class="placement_main">
-    <button routerLink="/placement/p1">Pflegeheim Gegenüber vom Herzzentrum Dresden</button><br>
-    <button routerLink="/placement/p2">Pflegeheim am blauen Wunder</button><br>
-    <button routerLink="/placement/p3">Pflegeheim am Elbufer</button><br>
-  </div>
-
   <!-- placement.component.html -->
   <div class="tab">
     <button class="tablinks, active" routerLink="/placement/p1" (mouseover)="openCity('Herzzentrum')">Pflegeheim Gegenüber vom Herzzentrum Dresden</button>
@@ -18,18 +12,27 @@
   </div>
 
   <div id="Herzzentrum" class="tabcontent">
-    <h3>Herzzentrum</h3>
-    <p>London is the capital city of England.</p>
+    <h3>Weitere Informationen</h3><hr>
+    <p></p>
+    <p>In diesem Standort bieten wir Heimkunden als auch externen Kunden unsere Leistungn an.</p>
+    <!--    <p>Fetscherstraße 111, 01307 Dresden</p>-->
+    <button class="placement_all" routerLink="/placement/p1" >Zur Wegbeschreibung</button>
   </div>
 
   <div id="blauen Wunder" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
+    <h3>Weitere Informationen</h3><hr>
+    <p></p>
+    <p>In diesem Standort bieten wir ausschließlich Heimkunden unsere Leistungen an.</p>
+    <!--    <p>Schillerplatz 12, 01309 Dresden</p>-->
+    <button class="placement_all" routerLink="/placement/p2" >Zur Wegbeschreibung</button>
   </div>
 
   <div id="Elbufer" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <h3>Weitere Informationen</h3><hr>
+    <p></p>
+    <p>In diesem Standort bieten wir ausschließlich Heimkunden unsere Leistungen an.</p>
+    <!--    <p>Käthe-Kollwitz-Ufer 4, 01307 Dresden</p>-->
+    <button class="placement_all" routerLink="/placement/p3" >Zur Wegbeschreibung</button>
   </div>
 
   <div class="clearfix"></div>
