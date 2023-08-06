@@ -4,6 +4,7 @@ h1 {
   font-weight: bold;
   /*text-shadow: 5px 5px rgba(0,0,5,0);*/
   text-shadow: 20px 4px 4px 4px #ffffff;
+  font-family: 'Lato', "Segoe UI";
 }
 
 .three_maps {
@@ -17,5 +18,6 @@ h1 {
 }
 
 .three_description {
-
+  font-family: 'Lato';
+  text-align: center;
 }

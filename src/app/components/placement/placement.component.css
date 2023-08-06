@@ -1,5 +1,6 @@
 H1 {
   text-align: center;
+  font-family: 'Lato', "Segoe UI";
 }
 
 /* placement.component.css */
@@ -9,6 +10,7 @@ H1 {
   background-color: #f1f1f1;
   width: 30%;
   height: 300px;
+  font-family: Lato;
 }
 
 .tab button {
@@ -22,6 +24,7 @@ H1 {
   text-align: left;
   cursor: pointer;
   font-size: 17px;
+  font-family: Lato;
 }
 
 .tab button:hover {
@@ -40,6 +43,7 @@ H1 {
   border-left: none;
   height: 300px;
   display: none;
+  font-family: Lato;
 }
 
 .clearfix::after {
@@ -55,6 +59,7 @@ H1 {
   height: 10%;
   width: 100%;
   bottom: 0;
+  font-family: Lato;
 }
 
 @media screen and (max-width: 1760px) {

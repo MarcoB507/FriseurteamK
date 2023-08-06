@@ -5,7 +5,7 @@
   text-align: center;
   bottom: 0;
   font-weight: bold;
-  font-family: Arial;
+  font-family: 'Lato', "Segoe UI";
   width: 99%;
   /*position: fixed;*/
   margin-bottom: 0.5%;
@@ -27,4 +27,9 @@
   text-decoration: none;
   padding: 10px 20px;
   display: block;
+}
+
+#footer a:hover {
+  background-color: #ddd;
+  color: black;
 }

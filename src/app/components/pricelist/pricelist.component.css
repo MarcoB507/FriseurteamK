@@ -2,6 +2,7 @@
   border-collapse: collapse;
   margin: 5% auto;
   background-color: #1b1c1b;
+  font-family: 'Lato';
 }
 
 .price-table th, .price-table td {

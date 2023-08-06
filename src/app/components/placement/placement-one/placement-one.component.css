@@ -4,6 +4,7 @@ h1 {
   font-weight: bold;
   /*text-shadow: 5px 5px rgba(0,0,5,0);*/
   text-shadow: 20px 4px 4px 4px #ffffff;
+  font-family: 'Lato', "Segoe UI";
 }
 
 .one_maps {
@@ -21,4 +22,5 @@ h1 {
   align-items: center;
   text-align: center;
   border: groove;
+  font-family: 'Lato';
 }
