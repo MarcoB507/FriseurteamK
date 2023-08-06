@@ -12,8 +12,8 @@
 .mainpage_p {
   /*margin-top: 5%;*/
   font-family: "Courier New";
-  text-align: left;
-  font-size: 32px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .title {
@@ -54,7 +54,7 @@ button:hover, a:hover {
 
 .price-table th, .price-table td {
   text-align: left;
-  padding: 10px;
+  padding: 20px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -192,7 +192,19 @@ button:hover, a:hover {
 
 @media screen and (max-width: 600px) {
   .price-table tbody td:first-child, .price-table tbody td:last-child {
-    font-weight: bold;
-    font-size: 8px;
+    /*font-weight: bold;*/
+    font-size: 11.5px;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .price-table, .price-table th, .price-table td {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .price-table, .price-table th, .price-table td {
+    width: 90%;
   }
 }
