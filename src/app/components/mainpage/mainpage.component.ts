@@ -40,6 +40,9 @@ export class MainpageComponent implements OnInit{
     slides[this.slideIndex - 1].style.display = "block";
     dots[this.slideIndex - 1].className += " active";
   }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll zur oberen Seite mit sanfter Animation
+  }
 }
 
 

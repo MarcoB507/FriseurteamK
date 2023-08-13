@@ -4,50 +4,80 @@
 }
 
 .mainpage_h1 {
-  /*margin-top: 10%;*/
   font-family: 'Lato', "Segoe UI";
   text-align: center;
   font-weight: bold;
 }
 
 .mainpage_p {
-  /*margin-top: 5%;*/
   font-family: 'Lato';
   font-size: 24px;
   text-align: center;
 }
 
-.title {
-  color: grey;
-  font-size: 18px;
+/** Card Design begin **/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+  background-color: #1b1c1b;
+  width: 80%;
+  color: white;
+  font-family: Lato;
 }
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
+.card H1 {
+  padding-top: 2%;
+}
+
+.title {
+  background-image: url(/src/pictures/911.jpg);
   width: 100%;
-  font-size: 18px;
+}
+
+.title .card_pic {
+  width: 100%;
 }
 
 a {
   text-decoration: none;
-  font-size: 22px;
-  color: black;
+  font-size: 36px;
+  color: white;
 }
 
 button:hover, a:hover {
   opacity: 0.7;
 }
 
+.red-letter {
+  color: #b52828;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Lato;
+  font-size: 36px;
+  /*margin-bottom: 5%;*/
+  padding-bottom: 2%;
+}
+
+p {
+  font-family: Lato;
+  font-size: 32px;
+  margin-bottom: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+  padding-left: 5%;
+}
+
+/** Card Design end **/
+
 /*table-design*/
 
 .price-table {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-collapse: collapse;
   margin: auto;
   background-color: #1b1c1b;
@@ -58,6 +88,7 @@ button:hover, a:hover {
   text-align: left;
   padding: 20px;
   border-bottom: 1px solid #ddd;
+  font-size: 36px;
 }
 
 .price-table th {
@@ -68,21 +99,24 @@ button:hover, a:hover {
 }
 
 .price-table tbody tr:hover {
-  /*background-color: #f5f5f5;*/
+  background-color: #333333;
 }
 
 .price-table tbody td:first-child {
-  font-weight: bold;
-  font-size: 16px;
+  /*font-weight: bold;*/
+  text-align: left;
+  padding-left: 10%;
+  font-size: 32px;
 }
 
 .price-table tbody td:last-child {
-  font-weight: bold;
-  font-size: 16px;
+  /*font-weight: bold;*/
+  text-align: left;
+  font-size: 32px;
 }
 
 .price-table, .price-table th, .price-table td {
-  width: 50%;
+  width: 80%;
 }
 
 * {
@@ -181,6 +215,26 @@ button:hover, a:hover {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+.Mainpage_End {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.Button_End {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b52828;
+  color: white;
+  cursor: pointer;
+  width: 70%;
+  height: 30px;
+}
+
 
 @keyframes fade {
   from {
