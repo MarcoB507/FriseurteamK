@@ -12,9 +12,11 @@ h1 {
 }
 
 .three_card {
-  width: 100%;
+  width: 80%;
   height: 100%;
   min-height: 600px;
+  padding-left: 10%;
+  padding-right: 10%
 }
 
 .three_description {
