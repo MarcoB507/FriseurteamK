@@ -29,4 +29,7 @@ export class PlacementComponent {
   //     cityElement.style.display = 'block';
   //   }
   // }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

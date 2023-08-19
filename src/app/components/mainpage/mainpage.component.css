@@ -216,26 +216,6 @@ p {
   animation-duration: 1.5s;
 }
 
-.Mainpage_End {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  cursor: pointer;
-}
-
-.Button_End {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #b52828;
-  color: white;
-  cursor: pointer;
-  width: 70%;
-  height: 30px;
-}
-
-
 @keyframes fade {
   from {
     opacity: .4

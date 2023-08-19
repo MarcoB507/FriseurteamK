@@ -41,7 +41,7 @@ export class MainpageComponent implements OnInit{
     dots[this.slideIndex - 1].className += " active";
   }
   scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll zur oberen Seite mit sanfter Animation
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
 

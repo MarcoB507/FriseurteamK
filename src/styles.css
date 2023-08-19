@@ -41,3 +41,22 @@ table, tr, td, h, a {
   background-image: url(pictures/menu_footer_bg.jpg);
   vertical-align: sub;
 }
+
+.Button_End {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1b1c1b;
+  color: white;
+  cursor: pointer;
+  width: 80%;
+  height: 30px;
+}
+
+.Mainpage_End {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
