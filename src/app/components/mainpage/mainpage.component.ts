@@ -7,46 +7,33 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./mainpage.component.css']
 })
 export class MainpageComponent implements OnInit{
-  slideIndex: number = 1;
+  slides = [
+    { caption: 'Caption 1', display: 'none' },
+    { caption: 'Caption 2', display: 'none' },
+    { caption: 'Caption 3', display: 'none' },
+    { caption: 'Caption 4', display: 'none' }
+  ];
+  currentIndex = 0;
+
+  constructor() { }
 
   ngOnInit() {
-    this.showSlides(this.slideIndex);
+    this.showSlide(this.currentIndex);
   }
 
-  plusSlides(n: number) {
-    this.showSlides(this.slideIndex += n);
+  prevSlide() {
+    this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+    this.showSlide(this.currentIndex);
   }
 
-  currentSlide(n: number) {
-    this.showSlides(this.slideIndex = n);
+  nextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+    this.showSlide(this.currentIndex);
   }
 
-  showSlides(n: number) {
-    let i;
-    const slides = document.getElementsByClassName("mySlides") as HTMLCollectionOf<HTMLElement>;
-    const dots = document.getElementsByClassName("dot") as HTMLCollectionOf<HTMLElement>;
-
-    if (n > slides.length) { this.slideIndex = 1; }
-    if (n < 1) { this.slideIndex = slides.length; }
-
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  showSlide(index: number) {
+    for (let i = 0; i < this.slides.length; i++) {
+      this.slides[i].display = i === index ? 'block' : 'none';
     }
-
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[this.slideIndex - 1].style.display = "block";
-    dots[this.slideIndex - 1].className += " active";
-  }
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
-
-
-
-
-
-
