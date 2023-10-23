@@ -3,11 +3,32 @@
   </head>
   <body>
     <H1>Pflegeheim Gegenüber vom Herzzentrum Dresden</H1><hr><br>
-    <div class="one_maps">
-      <iframe class="one_card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.7559506540633!2d13.774236376904314!3d51.05759394346297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4709c8b59d5e2029%3A0xa40b9ec967af2388!2sFetscherstra%C3%9Fe%20111%2C%2001307%20Dresden!5e0!3m2!1sde!2sde!4v1687707770112!5m2!1sde!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="slideshow-container">
+      <div class="mySlides slide1" [style.display]="slides[0].display">
+        <div class="caption">{{ slides[0].caption }}</div>
+      </div>
+      <div class="mySlides slide2" [style.display]="slides[1].display">
+        <div class="caption">{{ slides[1].caption }}</div>
+      </div>
+      <div class="mySlides slide3" [style.display]="slides[2].display">
+        <div class="caption">{{ slides[2].caption }}</div>
+      </div>
+      <div class="mySlides slide4" [style.display]="slides[3].display">
+        <div class="caption">{{ slides[3].caption }}</div>
+      </div>
+
+      <button class="prev" (click)="prevSlide()">&#10094;</button>
+      <button class="next" (click)="nextSlide()">&#10095;</button>
     </div>
+
     <div class="one_description">
       <h1>Wegbeschreibung</h1><hr><br>
+
+      <div class="one_maps">
+        <iframe class="one_card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.7559506540633!2d13.774236376904314!3d51.05759394346297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4709c8b59d5e2029%3A0xa40b9ec967af2388!2sFetscherstra%C3%9Fe%20111%2C%2001307%20Dresden!5e0!3m2!1sde!2sde!4v1687707770112!5m2!1sde!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
       Termine sind ausschlielich in unseren Regulären Öffnungszeiten möglich, diese finden sie
         <a routerLink="/"><b>hier</b></a><br>
       Sie können Ihren Terminvorschlag nicht in der Vergangenheit oder den kommenden 2 Tagen buchen

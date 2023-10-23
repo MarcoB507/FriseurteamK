@@ -33,17 +33,17 @@ table, tr, td, h, a {
 
 .mySlides {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
 .slide1 {
-  background-image: url(pictures/eingang_schild.jpg);
+  background-image: url(pictures/mainpage1.JPG);
 }
 
 .slide2 {
-  background-image: url(pictures/jubilee-ace.jpg);
+  background-image: url(pictures/eingang_schild.jpg);
 }
 
 .slide3 {
@@ -52,14 +52,6 @@ table, tr, td, h, a {
 
 .slide4 {
   background-image: url(pictures/911.jpg);
-}
-
-.caption {
-  position: absolute;
-  bottom: 0px;
-  left: 45%;
-  padding: 5px;
-  font-size: 18px;
 }
 
 #card_pic {

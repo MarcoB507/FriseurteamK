@@ -3,10 +3,30 @@
 </head>
 <body>
 <H1>Pflegeheim am blauen Wunder</H1><hr><br>
+
+<div class="slideshow-container">
+  <div class="mySlides slide1" [style.display]="slides[0].display">
+    <div class="caption">{{ slides[0].caption }}</div>
+  </div>
+  <div class="mySlides slide2" [style.display]="slides[1].display">
+    <div class="caption">{{ slides[1].caption }}</div>
+  </div>
+  <div class="mySlides slide3" [style.display]="slides[2].display">
+    <div class="caption">{{ slides[2].caption }}</div>
+  </div>
+  <div class="mySlides slide4" [style.display]="slides[3].display">
+    <div class="caption">{{ slides[3].caption }}</div>
+  </div>
+
+  <button class="prev" (click)="prevSlide()">&#10094;</button>
+  <button class="next" (click)="nextSlide()">&#10095;</button>
+</div>
+
+<h1>Wegbeschreibung</h1><hr><br>
+
 <div class="two_maps">
   <iframe class="two_card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.074414612998!2d13.805200076862683!3d51.05171374389009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4709c89382f69e17%3A0x53098cc8da874627!2sSchillerpl.%2012%2C%2001309%20Dresden!5e0!3m2!1sde!2sde!4v1689965272812!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-<h1>Wegbeschreibung</h1><hr><br>
 <div class="two_description">Unser Geschäft in "Stadt" befindet sich in der Fetcherstraße 111 <br> in 0351? Dresden. <br> Der Eingang befindet sich gegenüber des Herzzentrums.</div>
 </body>
 </html>

@@ -8,10 +8,10 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MainpageComponent implements OnInit{
   slides = [
-    { caption: 'Caption 1', display: 'none' },
-    { caption: 'Caption 2', display: 'none' },
-    { caption: 'Caption 3', display: 'none' },
-    { caption: 'Caption 4', display: 'none' }
+    { caption: null, display: 'none' },
+    { caption: null, display: 'none' },
+    { caption: null, display: 'none' },
+    { caption: null, display: 'none' }
   ];
   currentIndex = 0;
 
