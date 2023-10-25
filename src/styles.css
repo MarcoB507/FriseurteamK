@@ -50,8 +50,15 @@ table, tr, td, h, a {
   background-image: url(pictures/911.jpg);
 }
 
+/*.slide1:hover, .slide2:hover, .slide3:hover, .slide4:hover {*/
+/*  transform: scale(0.9);*/
+/*}*/
+
 #card_pic {
   background-image: url(src/pictures/meisterbrief.jpg);
+  /*transform: scale(1.05);*/
+  /*transform: scaleY(1.5);*/
+  /*transform: scalex(1.5);*/
   width: 600px;
   height: 625px;
   display: block;

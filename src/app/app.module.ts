@@ -22,6 +22,8 @@ import {FormsModule} from "@angular/forms";
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
 import {MatNativeDateModule} from '@angular/material/core';
+import { CarouselModule } from 'primeng/carousel';
+
 
 @NgModule({
   declarations: [
@@ -42,14 +44,15 @@ import {MatNativeDateModule} from '@angular/material/core';
     CareerComponent,
     AppointmentComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    MatDatepickerModule,
-    MatInputModule,
-    MatNativeDateModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        MatDatepickerModule,
+        MatInputModule,
+        MatNativeDateModule,
+        CarouselModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -16,8 +16,6 @@ export class MainpageComponent implements OnInit {
   ];
   currentIndex = 0;
 
-
-
   constructor() { }
 
   ngOnInit() {
