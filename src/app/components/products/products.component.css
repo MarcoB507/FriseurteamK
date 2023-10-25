@@ -12,23 +12,65 @@ h1 {
   font-family: 'Lato', "Segoe UI";
 }
 
+.product_null {
+  background-image: url(src/pictures/911.jpg);
+  height: 363px;
+  width: 644px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product_one {
+  background-image: url(src/pictures/911.jpg);
+  height: 363px;
+  width: 644px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product_two {
+  background-image: url(src/pictures/911.jpg);
+  height: 363px;
+  width: 644px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product_three {
+  background-image: url(src/pictures/911.jpg);
+  height: 363px;
+  width: 644px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product_four {
+  background-image: url(src/pictures/911.jpg);
+  height: 363px;
+  width: 644px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  /*justify-content: space-between;*/
   margin: 0 -5px;
 }
 
-.column {
-  flex: 0 0 30%;
-  padding: 50px;
-  box-sizing: border-box;
+.product_null:hover, .product_one:hover, .product_two:hover, .product_three:hover, .product_four:hover {
+  border: 3px solid #777;
 }
 
-.column img {
-  /*display: block;*/
-  width: 100%;
-  /*height: auto;*/
+.products_null {
+  width: 50%;
+}
+
+.product_description {
+  width: 50%;
 }
 
 .column p {
@@ -36,9 +78,12 @@ h1 {
 }
 
 .products_text {
-  margin-top: -4%;
-  height: 10%;
-  background-color: #dddddd;
+  width: 644px;
   color: black;
   text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #777;
+  margin-bottom: 5%;
 }

@@ -27,10 +27,6 @@ table, tr, td, h, a {
   background-image: url(pictures/menu_footer_bg.jpg);
 }
 
-.product_pic {
-  background-image: url(src/pictures/911.jpg);
-}
-
 .mySlides {
   width: 100%;
   height: 100vh;

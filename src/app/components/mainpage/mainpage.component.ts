@@ -6,14 +6,17 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './mainpage.component.html',
   styleUrls: ['./mainpage.component.css']
 })
-export class MainpageComponent implements OnInit{
+export class MainpageComponent implements OnInit {
+
   slides = [
-    { caption: null, display: 'none' },
-    { caption: null, display: 'none' },
-    { caption: null, display: 'none' },
-    { caption: null, display: 'none' }
+    {caption: null, display: 'none'},
+    {caption: null, display: 'none'},
+    {caption: null, display: 'none'},
+    {caption: null, display: 'none'}
   ];
   currentIndex = 0;
+
+
 
   constructor() { }
 
@@ -35,5 +38,9 @@ export class MainpageComponent implements OnInit{
     for (let i = 0; i < this.slides.length; i++) {
       this.slides[i].display = i === index ? 'block' : 'none';
     }
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
