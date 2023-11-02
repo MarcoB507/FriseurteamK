@@ -27,6 +27,25 @@ table, tr, td, h, a {
   background-image: url(pictures/menu_footer_bg.jpg);
 }
 
+
+.image {
+  height: 363px;
+  width: 644px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image1 {
+  background-image: url(pictures/mainpage1.JPG);
+}
+
+.image2 {
+  background-image: url(pictures/eingang_schild.jpg);
+}
+
 .mySlides {
   width: 100%;
   height: 100vh;
@@ -47,7 +66,27 @@ table, tr, td, h, a {
 }
 
 .slide4 {
-  background-image: url(pictures/911.jpg);
+  background-image: url(pictures/jubilee-ace.jpg);
+}
+
+.line.active {
+  color: red;
+  width: 50px;
+}
+
+/* Linien-Styling */
+.line-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: #b52828;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
 /*.slide1:hover, .slide2:hover, .slide3:hover, .slide4:hover {*/

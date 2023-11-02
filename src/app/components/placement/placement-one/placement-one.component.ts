@@ -13,6 +13,7 @@ export class PlacementOneComponent {
     { caption: null, display: 'none' }
   ];
   currentIndex = 0;
+  options: any;
 
   constructor() { }
 

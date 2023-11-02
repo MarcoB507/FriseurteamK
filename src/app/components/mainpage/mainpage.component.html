@@ -4,17 +4,23 @@
   <meta charset="utf-8">
 </head>
 <body>
-
-<!--<p-carousel [style.display]="images">-->
-<!--  <ng-template let-image pTemplate="header">-->
-<!--    <h3>{{ image.title }}</h3>-->
+<!--<ngb-carousel-->
+<!--  #carousel-->
+<!--  [interval]="1000"-->
+<!--  [pauseOnHover]="pauseOnHover"-->
+<!--  [pauseOnFocus]="pauseOnFocus"-->
+<!--  (slide)="onSlide($event)">-->
+<!--  <ng-template ngbSlide *ngFor="let img of images; let i = index">-->
+<!--    <div class="carousel-caption">-->
+<!--      <h3>My slide {{ i + 1 }} title</h3>-->
+<!--    </div>-->
+<!--    <a [href]="'https://www.google.fr/?q=Number+' + (i + 1)" target="_blank" rel="nofollow noopener noreferrer">-->
+<!--      <div class="picsum-img-wrapper">-->
+<!--        <img [src]="img" [alt]="'My image ' + (i + 1) + ' description'" />-->
+<!--      </div>-->
+<!--    </a>-->
 <!--  </ng-template>-->
-<!--  <ng-template let-image pTemplate="item">-->
-<!--    <img [src]="image.src" alt="{{ image.title }}" />-->
-<!--  </ng-template>-->
-<!--</p-carousel>-->
-
-
+<!--</ngb-carousel>-->
 
 <div class="slideshow-container">
   <div class="mySlides slide1" [style.display]="slides[0].display">
@@ -32,8 +38,10 @@
 
   <button class="prev" (click)="prevSlide()">&#10094;</button>
   <button class="next" (click)="nextSlide()">&#10095;</button>
+  <div class="line-container">
+    <div class="line" *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex" (click)="goToSlide(i)"></div>
+  </div>
 </div>
-
 
 <!-- card element -->
 <div class="card">

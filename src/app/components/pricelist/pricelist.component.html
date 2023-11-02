@@ -1,30 +1,36 @@
+<html>
+<head>
+</head>
+<body>
 
-<!--<table class="price-table">-->
-<!--  <thead>-->
-<!--  <tr>-->
-<!--&lt;!&ndash;    <th>Haarpflege für Damen</th>&ndash;&gt;-->
-<!--&lt;!&ndash;    <th>kurz</th>&ndash;&gt;-->
-<!--    <th>mittel</th>-->
-<!--    <th>lang</th>-->
-<!--  </tr>-->
-<!--  </thead>-->
-<!--  <tbody>-->
-<!--  <tr>-->
-<!--&lt;!&ndash;    <td>Haarschnitt, LW/FW</td>&ndash;&gt;-->
-<!--&lt;!&ndash;    <td>42.00 €</td>&ndash;&gt;-->
-<!--    <td>44.00 €</td>-->
-<!--    <td>46.00 €</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>Angebot 2</td>-->
-<!--    <td>€</td>-->
-<!--  </tr>-->
-<!--  <tr>-->
-<!--    <td>...</td>-->
-<!--    <td>€</td>-->
-<!--  </tr>-->
-<!--  </tbody>-->
-<!--</table>-->
+
+
+<table class="price-table">
+  <thead>
+  <tr>
+    <th>Haarpflege für Damen</th>
+    <th>kurz</th>
+    <th>mittel</th>
+    <th>lang</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Haarschnitt, LW/FW</td>
+    <td>42.00 €</td>
+    <td>44.00 €</td>
+    <td>46.00 €</td>
+  </tr>
+  <tr>
+    <td>Angebot 2</td>
+    <td>€</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>€</td>
+  </tr>
+  </tbody>
+</table>
 <html>
 <table class="price-table">
   <thead>
@@ -137,3 +143,75 @@
 </html>
 
 
+
+<!--<html>-->
+<!--<head>-->
+<!--</head>-->
+<!--<body>-->
+<!--<cdk-accordion class="price-accordion">-->
+<!--  <cdk-accordion-item-->
+<!--    *ngFor="let item of items; let index = index;"-->
+<!--    #accordionItem="cdkAccordionItem"-->
+<!--    class="example-accordion-item"-->
+<!--    role="button"-->
+<!--    tabindex="0"-->
+<!--    [attr.id]="'accordion-header-' + index"-->
+<!--    [attr.aria-expanded]="accordionItem.expanded"-->
+<!--    [attr.aria-controls]="'accordion-body-' + index">-->
+<!--    <div class="example-accordion-item-header" (click)="accordionItem.toggle()">-->
+<!--      {{ item }}-->
+<!--      <span class="example-accordion-item-description">-->
+<!--        Click to {{ accordionItem.expanded ? 'close' : 'open' }}-->
+<!--      </span>-->
+<!--    </div>-->
+<!--    <div-->
+<!--      class="example-accordion-item-body"-->
+<!--      role="region"-->
+<!--      [style.display]="accordionItem.expanded ? '' : 'none'"-->
+<!--      [attr.id]="'accordion-body-' + index"-->
+<!--      [attr.aria-labelledby]="'accordion-header-' + index">-->
+<!--      <ng-container *ngIf="item === 'Damen'">-->
+<!--        <table class="price-table">-->
+<!--          <thead>-->
+<!--          <tr>-->
+<!--            <th>Haarpflege für Damen</th>-->
+<!--            <th>kurz</th>-->
+<!--            <th>mittel</th>-->
+<!--            <th>lang</th>-->
+<!--          </tr>-->
+<!--          </thead>-->
+<!--          <tbody>-->
+<!--          <tr>-->
+<!--            <td>Haarschnitt, LW/FW</td>-->
+<!--            <td>42.00 €</td>-->
+<!--            <td>44.00 €</td>-->
+<!--            <td>46.00 €</td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <td>Angebot 2</td>-->
+<!--            <td>€</td>-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <td>...</td>-->
+<!--            <td>€</td>-->
+<!--          </tr>-->
+<!--          </tbody>-->
+<!--        </table>-->
+<!--      </ng-container>-->
+<!--      <ng-container *ngIf="item === 'Herren'">-->
+<!--        test2-->
+<!--      </ng-container>-->
+<!--      <ng-container *ngIf="item === 'Kinder bis 14 Jahren'">-->
+<!--        test3-->
+<!--      </ng-container>-->
+<!--      <ng-container *ngIf="item === 'Produkte'">-->
+<!--        test4-->
+<!--      </ng-container>-->
+<!--    </div>-->
+<!--  </cdk-accordion-item>-->
+<!--</cdk-accordion>-->
+<!--<div class="Mainpage_End">-->
+<!--  <button class="Button_End" (click)="scrollToTop()">Nach oben</button>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

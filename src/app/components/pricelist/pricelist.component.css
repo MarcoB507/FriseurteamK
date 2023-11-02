@@ -40,3 +40,60 @@ h1{
   text-align: center;
   font-family: "Times New Roman";
 }
+
+
+.price-accordion {
+  display: block;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /*background: black;*/
+  color: white;
+}
+
+.example-accordion-item {
+  display: block;
+  border: solid 1px #ccc;
+  background: #1b1c1b;
+}
+
+.example-accordion-item + .example-accordion-item {
+  border-top: none;
+}
+
+.example-accordion-item-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  /*background: black;*/
+}
+
+.example-accordion-item-description {
+  font-size: 0.85em;
+  color: white;
+}
+
+.example-accordion-item-header,
+.example-accordion-item-body {
+  padding: 16px;
+  /*background: black;*/
+}
+
+.example-accordion-item-header:hover {
+  cursor: pointer;
+  /*background-color: #eee;*/
+  background-color: #333333;
+}
+
+.example-accordion-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  /*background: #007bff;*/
+}
+
+.example-accordion-item:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

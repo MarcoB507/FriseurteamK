@@ -23,6 +23,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
 import {MatNativeDateModule} from '@angular/material/core';
 import { CarouselModule } from 'primeng/carousel';
+import {CdkAccordionModule} from "@angular/cdk/accordion";
+import {GalleriaModule} from "primeng/galleria";
+import {NgbCarousel} from "@ng-bootstrap/ng-bootstrap";
 
 
 @NgModule({
@@ -44,15 +47,18 @@ import { CarouselModule } from 'primeng/carousel';
     CareerComponent,
     AppointmentComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FormsModule,
-        MatDatepickerModule,
-        MatInputModule,
-        MatNativeDateModule,
-        CarouselModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+    CarouselModule,
+    CdkAccordionModule,
+    GalleriaModule,
+    NgbCarousel
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
